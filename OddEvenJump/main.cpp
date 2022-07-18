@@ -21,7 +21,6 @@ Return the number of good starting indices.
 #include <iostream>
 #include <chrono>
 #include "solution.h"
-#include "arr.h"
 
 int main()
 {
@@ -29,8 +28,13 @@ int main()
 
     auto start = std::chrono::high_resolution_clock::now();
 
+    // real array for tests see at arr.txt
+    std::vector<int> arr{
+        10, 123,432,54    
+    };
+
     // still too slow
-    int count = sln.oddEvenJumps(test::arr);
+    int count = sln.oddEvenJumps(arr);
 
     auto stop = std::chrono::high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);

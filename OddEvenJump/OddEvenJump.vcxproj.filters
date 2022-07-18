@@ -18,16 +18,15 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="arr.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="solution.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="arr.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="arr.text">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
